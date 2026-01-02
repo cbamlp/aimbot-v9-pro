@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AIMBOT PRIVATE</title>
+<style>
+body {
+  background: black;
+  color: #00ff99;
+  font-family: monospace;
+}
+</style>
+</head>
+<body>
+<h3>AIMBOT MODULE v9.3</h3>
+<pre id="log"></pre>
+
+<script>
+const logs = [
+  "Injecting aim_core.dll ... OK",
+  "Loading color module ... OK",
+  "Enemy detected — HEAD",
+  "Aim locked ✔",
+  "Target eliminated"
+];
+
+setInterval(() => {
+  document.getElementById("log").innerHTML +=
+    logs[Math.floor(Math.random()*logs.length)] + "\n";
+}, 700);
+</script>
+</body>
+</html>
